@@ -11,7 +11,7 @@ class App extends Component {
       <div className="how-cont d-flex justify-content-center align-items-center my-2 mx-auto">
       <img className="how-img m-auto m-3" src="http://icons.iconarchive.com/icons/webalys/kameleon.pics/512/Medal-2-icon.png"/>
       </div>
-      <p className="text-justify">Solo baja un poco más y podrás revisar nuestro listado de restaurantes; escoge el que más te guste y revisa su información de contacto.</p>
+      <p className="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ad molestias id aperiam, cumque et quia iste quis quo, minus nesciunt non voluptatem, iure architecto unde, nihil eveniet provident possimus dolorum mollitia? Iste repellendus eos, recusandae dignissimos tempora aperiam iusto quia quis cum vel, vero omnis. Obcaecati sunt suscipit recusandae, non, ab cupiditate debitis accusamus iure harum, laborum quos ratione. Quisquam soluta, autem expedita labore dolor consequatur odit fugit earum.</p>
       <p className="text-center h4">¡Vamos!</p>
       </div>
       );

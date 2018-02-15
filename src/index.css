@@ -260,6 +260,12 @@ z-index: 3}
   align-items: center;
   min-height: 80vh;
 }
+.App p {
+  width: 90%;
+  text-align: justify;
+  max-width: 650px;
+  margin: 0 auto;
+}
 .how-cont {
   width: 140px;
   height: 140px;
