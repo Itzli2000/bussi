@@ -79,17 +79,36 @@ function render(prod){
       return time.join ('');
     }
     return(`
-      <div class="message">
-      <div class="card-price">ticket: ${message.ticket}</div>
-      <h3 class="card-title">${message.startPlaceName}</h3>
-      <p class="card-description">${message.startPlaceAddress}</p>
-      <div class="card-price">${newhour}</div>
-      <div class="card-price">${s}</div>
-      <h5 class="card-title">${message.endPlaceName}</h5>
-      <p class="card-description">${message.endPlaceAddress}</p>
-      <div class="card-price">${lasthour}</div>
-      <div class="card-price">${send}</div>
+  <div class="message">
+    <div class="row">
+      <div class="col-6 d-flex flex-column justify-content-center align-items-center card-ticket">
+        <div class="">ticket: ${message.ticket}</div>
       </div>
+      <div class="col-6 d-flex flex-column justify-content-center align-items-center card-title">
+        <h1 class="">${message.full_name}</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 d-flex flex-column justify-content-center align-items-center firstdate">
+        <div class="card-hour">${newhour}</div>
+        <div class="card-date">${s}</div>
+      </div>
+      <div class="col-6 d-flex flex-column justify-content-center align-items-center firstaddress">
+        <h3 class="card-start">${message.startPlaceName}</h3>
+        <p class="card-startaddress">${message.startPlaceAddress}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 d-flex flex-column justify-content-center align-items-center lastdate">
+        <div class="card-endhour">${lasthour}</div>
+        <div class="card-enddate">${send}</div>
+      </div>
+      <div class="col-6 d-flex flex-column justify-content-center align-items-center lastaddress">
+        <h5 class="card-endstart">${message.endPlaceName}</h5>
+        <p class="card-enddate">${message.endPlaceAddress}</p>
+      </div>
+    </div>
+  </div>
       `);
   }).join('  ');
 
@@ -107,12 +126,18 @@ function render(prod){
 //       console.log(m._d);
 //       var s = m.format("M/D/YYYY H:mm");
 //       return(`
-//         <div class="message">
-//         <h3 class="card-title">${message.startPlaceName}</h3>
-//         <p class="card-description">${message.startPlaceAddress}</p>
-//         <div class="card-price">${message.ticket}</div>
-//         <div class="card-price">${m._d}</div>
-//         </div>
+      // <div class="message">
+      // <h1 class="card-title">${message.full_name}</h1>
+      // <div class="card-ticket">ticket: ${message.ticket}</div>
+      // <h3 class="card-title">${message.startPlaceName}</h3>
+      // <p class="card-description">${message.startPlaceAddress}</p>
+      // <div class="card-ticket">${newhour}</div>
+      // <div class="card-ticket">${s}</div>
+      // <h5 class="card-title">${message.endPlaceName}</h5>
+      // <p class="card-description">${message.endPlaceAddress}</p>
+      // <div class="card-ticket">${lasthour}</div>
+      // <div class="card-ticket">${send}</div>
+      // </div>
 //         `);
 //     }
 //     )

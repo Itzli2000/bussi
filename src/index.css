@@ -3,3 +3,27 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+.message {
+  width: 500px;
+  border: 1px solid #000;
+  margin: 10px auto;
+}
+.row {
+  margin: 0;
+  padding: 0;
+}
+.col-6 {
+  border: 0.2px solid lightgray;
+  padding: 0;
+  margin: 0;
+}
+.card-ticket {
+  background-color: lightblue;
+  color: #FFF;
+}
+.firstdate {
+  border-left: 6px solid red;
+}
+.lastdate {
+  border-left: 6px solid blue;
+}
