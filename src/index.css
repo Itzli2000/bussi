@@ -8,7 +8,8 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
-/*Cards section using BEM 101*/
+/*Cards section using BEM 101
+ */
 .card--container {
   box-sizing: border-box;
   display: flex;
