@@ -1,12 +1,20 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Pathway Gothic One', sans-serif;
 }
-.message {
-  width: 500px;
-  border: 1px solid #000;
+#messagesContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card--container {
+  box-sizing: border-box;
+  display: flex;
+  width: 450px;
+  border: 3px solid #000;
   margin: 10px auto;
+  flex-direction: column;
 }
 .row {
   margin: 0;
@@ -17,13 +25,288 @@ body {
   padding: 0;
   margin: 0;
 }
-.card-ticket {
-  background-color: lightblue;
+.card__ticket {
+  background-color: #437ec8;
   color: #FFF;
+  font-size: 35px;
+  border: none;
+}
+.card__hour,
+.card__endhour  {
+  font-size: 30px;
+  font-weight: bold;
+}
+.card__title h1 {
+  font-size: 25px;
+  margin: 0;
+  padding-top: 0;
+  font-weight: bold;
+  color: #000;
+}
+.card__start,
+.card__endaddressName {
+  font-size: 22px;
+  margin: 0;
+  padding-top: 0;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 5px;
+}
+.card__startaddress,
+.card__endaddressPlace {
+  font-size: 20px;
+  margin: 0;
+}
+.card__date,
+.card__enddate {
+  font-size: 20px;
 }
 .firstdate {
-  border-left: 6px solid red;
+  border-left: 8px solid #2afda0;
 }
 .lastdate {
-  border-left: 6px solid blue;
+  border-left: 8px solid #f2627a;
 }
+h1, h2, h3, h4, h5 {
+  color: #4B498D;
+  margin-top: 0; }
+
+#container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto; }
+
+/*Styles for menu items*/
+#mainNav {
+  max-width: 1500px;
+  margin: 0 auto; }
+
+#mainNav a {
+  font-weight: bold; }
+
+.activemenu {
+  color: #4B498D !important; }
+#mainBanner,
+#What,
+#root {
+  min-height: 100vh;
+}
+
+/*Slideshow styles*/
+.slideshow-container {
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px; }
+
+.mySlides {
+  display: none;
+  width: 100%;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .img-banner {
+    width: 150%; }
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; }
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  background-color: rgba(54, 36, 16, 0.3);
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.text .info {
+  width: 80%;
+  max-width: 300px;
+  font-size: 12px;
+  margin: 10px auto;
+  text-transform: initial;
+  color: #E5E5E5; }
+
+.fadeslide {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+/*First section styles*/
+#What {
+  background: url("http://www.mintigo.com/wp-content/uploads/2013/11/winning-the-race.png?936a84");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+.bckWhat {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  background-color: rgba(255,255,255,0.5);
+}
+#What h1 {
+  z-index: 3;
+}
+#What p {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto; 
+z-index: 3}
+
+#btndown {
+  position: absolute;
+  bottom: 15px;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background: #4B498D;
+  cursor: pointer;
+  font-size: 30px;
+  transition: all 0.5s ease-in-out;
+  -webkit-animation: lookme 1.5s infinite;
+  animation: lookme 1.5s infinite; }
+
+#btndown:hover {
+  background: #7471D9;
+  transform: rotate(360deg); }
+
+@-webkit-keyframes lookme {
+  0%,
+  100% {
+    width: 70px;
+    height: 70px; }
+  50% {
+    width: 73px;
+    height: 73px; } }
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+/*Info section styles*/
+#info .row > * {
+  max-width: 300px;
+  margin: 0 auto; }
+
+.img-cont {
+  width: 170px;
+  height: 170px;
+  border: 2px solid #4B498D;
+  border-radius: 100%; }
+
+/*Second section styles*/
+#root {
+  background: url("data:image/jpeg;base64,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");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+.App {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 80vh;
+}
+.how-cont {
+  width: 140px;
+  height: 140px;
+  border: 2px solid #4B498D;
+  border-radius: 100%; }
+
+.how-img {
+  width: 85%;
+  height: auto; }
+
+  footer {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #4A4E69; }
+
+footer span a {
+  color: #FFF;
+  font-size: 20px; }
+
+footer span a:visited,
+footer span a:hover,
+footer span a:active {
+  color: #ffbf43;
+  text-decoration: none; }
+
+
+
+  @media screen and (min-width: 860px) {
+  .text {
+    font-size: 35px; }
+
+  .text .info {
+    max-width: 300px;
+    font-size: 15px;
+    margin: 10px auto;
+    text-transform: initial; }
+  /*Recomendation section styles*/
+  #recomCard {
+    width: 19rem; } }
+@media screen and (min-width: 1200px) {
+  .text {
+    font-size: 45px; }
+  .text .info {
+    max-width: 400px;
+    font-size: 20px;
+    margin: 20px auto;
+    text-transform: initial; } }
