@@ -67,7 +67,7 @@
     <h1 class="text-center text-uppercase">¿Qué es Super-Race?</h1>
     <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eveniet similique voluptatem soluta expedita, quasi, aliquid itaque autem accusantium, vero placeat minus dolorum aspernatur corporis.<br>¿Suena bien no?</p>
     <!-- Scroll button to next section -->
-    <div id="btndown" class="text-white d-flex flex-column justify-content-center align-content-center"><p class="text-center">&or;</p></div>
+    <div id="btndown" onclick="scrollRoot()" class="text-white d-flex flex-column justify-content-center align-content-center"><p class="text-center">&or;</p></div>
   </div>
   <div id="root"></div>
   <div class="pt-5 mt-5" id="raceList">
@@ -87,5 +87,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js" type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" type="text/javascript"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    // Smooth scroll on 'what' section button
+    function scrollRoot() {
+      var rootdiv = document.getElementById("root");
+      window.scrollTo(document.body, rootdiv.offsetTop, 100);
+    }
+  </script>
 </body>
 </html>

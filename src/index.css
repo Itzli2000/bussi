@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-family: 'Pathway Gothic One', sans-serif;
 }
-#messagesContainer {
+#messagesContainer > div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
