@@ -27,6 +27,9 @@ body {
   padding: 0;
   margin: 0;
 }
+.firstaddress {
+  height: 82px;
+}
 .card__ticket {
   background-color: #437ec8;
   color: #FFF;
@@ -53,6 +56,7 @@ body {
   font-weight: bold;
   color: #000;
   margin-bottom: 5px;
+  text-align: center;
 }
 .card__startaddress,
 .card__endaddressPlace {

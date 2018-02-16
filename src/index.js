@@ -93,8 +93,7 @@ render(
   document.getElementById('messagesContainer')
   );
 
-
-// Jquery necesary to run slider plugin
+// Jquery use for frontend control
 // Function to manage slider
 var slideIndex = 0;
 showSlides(slideIndex);
